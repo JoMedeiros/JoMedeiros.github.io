@@ -1,10 +1,20 @@
 import Image from "next/image"
 
+const ghLoader = ({ src, width, quality }) => {
+  return `${src}?size=${width|| 128}`
+}
+
 export default function TailWindCard(estile = 'simple') {
   return (
     <div className="flex font-sans">
       <div className="flex-none w-48 relative border-4 border-black rounded-xl">
-        <Image src="https://github.com/JoMedeiros.png" alt="" className="absolute z-10 inset-0 w-full h-full object-cover rounded-lg" loading="lazy" layout='fill' />
+        <Image
+          loader={ghLoader} 
+          src="https://github.com/JoMedeiros.png" 
+          width={64}
+          alt="Imagem de Perfil de JoMedeiros" 
+          className="absolute z-10 inset-0 w-full h-full object-cover rounded-lg" 
+          layout='fill' />
       </div>
       <form className="flex-auto p-6">
         <div className="flex flex-wrap">

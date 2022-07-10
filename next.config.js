@@ -4,6 +4,8 @@ const nextConfig = {
     domains: [
       'github.com',
     ],
+    loader: 'akamai',
+    path: '',
   },
   reactStrictMode: true,
 }

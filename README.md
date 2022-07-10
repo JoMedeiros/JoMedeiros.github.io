@@ -9,6 +9,7 @@ Meu site pessoal/CV feito com [Next.js](https://nextjs.org/).
     - [ ] Formação Complementar
     - [ ] Soft Skills
     - [ ] Interesses
+- [ ] Transformar o header em um componente React
 
 # Next
 

@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import TailWindCard from './TailWindCard'
 
 export default function Home() {
   return (
@@ -12,11 +11,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className='bg-black text-white font-sans mx-0 rounded-b-lg'>
+      <header className='bg-black text-white font-sans mx-0 rounded-b-lg shadow shadow-black/50'>
         <nav className='p-4'>
           <ul className='flex'>
-            <li className='px-4'><a href="/">Página inicial</a></li>
-            <li className='px-4 font-bold'><a href="/curriculum">Curriculum</a></li>
+            <li className='px-4'>
+              <Link href="/"><a>Página inicial</a></Link>
+            </li>
+            <li className='px-4 font-bold'>
+              <Link href="/curriculum"><a>Curriculum</a></Link>
+            </li>
           </ul>
         </nav>
       </header>
@@ -24,7 +27,7 @@ export default function Home() {
       <main className={styles.main + ' p-0'}>
         {/* <TailWindCard /> */}
 
-        <section className="w-[36rem] bg-black shadow shadow-black/90 p-4 rounded my-4 text-white">
+        <section className="w-[36rem] bg-black shadow shadow-black/50 py-4 px-8 rounded my-4 text-white">
           <h1 className="text-xl font-bold underline">Links</h1>
           <br />
           <p>
@@ -35,7 +38,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section className='w-[36rem] shadow shadow-black/90 p-4 rounded bg-black text-white'>
+        <section className='w-[36rem] shadow shadow-black/50 py-4 px-8 rounded bg-black text-white'>
           <h1 className='text-xl font-bold underline'>Habilidades</h1>
           <br />
           <p>Gerais: Git, PostgreSQL, HTML, CSS, bash.</p>
@@ -43,7 +46,7 @@ export default function Home() {
           <p>Frameworks Java: Spring.</p>
         </section>
 
-        <section className="w-[36rem] bg-black shadow shadow-black/90 p-4 rounded my-4 text-white">
+        <section className="w-[36rem] bg-black shadow shadow-black/50 py-4 px-8 rounded my-4 text-white">
           <h1 className='text-xl font-bold underline'>Experiência</h1>
           <br />
           <div className="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-400">

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import TailWindCard from './TailWindCard'
 
@@ -12,11 +12,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className='bg-black text-white font-sans mx-0 rounded-b-lg'>
+      <header className='bg-black text-white font-sans mx-0 rounded-b-lg shadow shadow-black/50'>
         <nav className='p-4'>
           <ul className='flex'>
-            <li className='px-4 font-bold'><a href="">Página inicial</a></li>
-            <li><a href="/curriculum">Curriculum</a></li>
+            <li className='px-4 font-bold'>
+              <Link href="/"><a>Página inicial</a></Link>
+            </li>
+            <li className='px-4'>
+              <Link href="/curriculum"><a>Curriculum</a></Link>
+            </li>
           </ul>
         </nav>
       </header>
