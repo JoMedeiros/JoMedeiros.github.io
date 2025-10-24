@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import TailWindCard from './TailWindCard'
 
 export default function Home() {
   return (
@@ -15,19 +16,19 @@ export default function Home() {
         <nav className='p-4'>
           <ul className='flex'>
             <li className='px-4'>
-              <Link href="/"><a>Página inicial</a></Link>
+              <Link href="/">Página inicial</Link>
             </li>
             <li className='px-4 font-bold'>
-              <Link href="/curriculum"><a>Curriculum</a></Link>
+              <Link href="/curriculum">Curriculum</Link>
             </li>
           </ul>
         </nav>
       </header>
 
       <main className={styles.main + ' p-0'}>
-        {/* <TailWindCard /> */}
+        <TailWindCard />
 
-        <section className="w-[36rem] bg-black shadow shadow-black/50 py-4 px-8 rounded my-4 text-white">
+        {/* <section className="w-[36rem] bg-black shadow shadow-black/50 py-4 px-8 rounded my-4 text-white">
           <h1 className="text-xl font-bold underline">Links</h1>
           <br />
           <p>
@@ -107,7 +108,7 @@ export default function Home() {
           </div>
           <br />
 
-        </section>
+        </section> */}
 
       </main>
 
@@ -117,7 +118,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          feito por Josivan Gois - 2022
+          feito por Josivan Gois - 2025
         </a>
       </footer>
     </div>

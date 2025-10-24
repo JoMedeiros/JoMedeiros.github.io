@@ -1,6 +1,6 @@
 # JoMedeiros.github.io
 
-Meu site pessoal/CV feito com [Next.js](https://nextjs.org/).
+Meu site pessoal feito com [Next.js](https://nextjs.org/) com o comando [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 # TODO
 
@@ -10,23 +10,48 @@ Meu site pessoal/CV feito com [Next.js](https://nextjs.org/).
     - [ ] Soft Skills
     - [ ] Interesses
 - [ ] Transformar o header em um componente React
+- [ ] Gerar testes e adicionar o job de testes ao `.github/workflows`
+- [ ] Configurar Docker
+- [ ] Corrigir as rotas (`/components/Footer` está acessível, por exemplo)
 
-# Next
+## Requisitos
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- yarn ou npm
+- node (versão >=20.9.0)
 
+Para instalar a versão mais recente do node, coso tenha o npm já instalado, executte o comando:
 
-## Getting Started
+```bash
+sudo npm install n -g
+```
 
-First, run the development server:
+Depois para instalar a versão mais recente estável:
+
+```bash
+n stable
+```
+
+Ou a versão mais recente de teste:
+
+```bash
+n latest
+```
+
+## Como executar
+
+Antes de tudo instale as dependências com:
+
+```bash
+npm install
+```
+
+Subir o servidor como ambiente `dev`:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O servidor irá executar no endereço [http://localhost:3000](http://localhost:3000).
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 

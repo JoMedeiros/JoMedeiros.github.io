@@ -7,7 +7,8 @@ const ghLoader = ({ src, width, quality }) => {
 export default function TailWindCard(estile = 'simple') {
   return (
     <div className="flex font-sans">
-      <div className="flex-none w-48 relative border-4 border-black rounded-xl">
+      <h2>Em Construção</h2>
+      {/* <div className="flex-none w-48 relative border-4 border-black rounded-xl">
         <Image
           loader={ghLoader} 
           src="https://github.com/JoMedeiros.png" 
@@ -81,6 +82,6 @@ export default function TailWindCard(estile = 'simple') {
           Free shipping on all continental US orders.
         </p>
         <h1>Links</h1>
-      </form>
+      </form> */}
     </div>);
 }
