@@ -2,18 +2,6 @@
 
 Meu site pessoal feito com [Next.js](https://nextjs.org/) com o comando [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# TODO
-
-- [ ] Adicionar Seções no currículo
-    - [ ] Formação
-    - [ ] Formação Complementar
-    - [ ] Soft Skills
-    - [ ] Interesses
-- [ ] Transformar o header em um componente React
-- [ ] Gerar testes e adicionar o job de testes ao `.github/workflows`
-- [ ] Configurar Docker
-- [ ] Corrigir as rotas (`/components/Footer` está acessível, por exemplo)
-
 ## Requisitos
 
 - yarn ou npm
